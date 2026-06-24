@@ -1,4 +1,3 @@
-import { Mail, MessageCircle } from 'lucide-react'
 import { profile } from '../data/profile.js'
 
 export default function Contact() {
@@ -12,10 +11,10 @@ export default function Contact() {
         </p>
         <div className="contact-actions">
           <a className="btn primary" href={`mailto:${profile.email}`}>
-            <Mail size={18} /> Email
+            <span aria-hidden="true">@</span> Email
           </a>
           <a className="btn ghost" href={`https://wa.me/${profile.whatsapp}`} target="_blank" rel="noreferrer">
-            <MessageCircle size={18} /> WhatsApp
+            <span aria-hidden="true">WA</span> WhatsApp
           </a>
         </div>
       </div>

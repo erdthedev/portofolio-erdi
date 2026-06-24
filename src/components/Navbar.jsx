@@ -1,4 +1,3 @@
-import { Menu, X } from 'lucide-react'
 import { useState } from 'react'
 
 const links = [
@@ -28,7 +27,7 @@ export default function Navbar() {
       </nav>
 
       <button className="menu-btn" onClick={() => setOpen((value) => !value)} aria-label="Toggle menu">
-        {open ? <X size={22} /> : <Menu size={22} />}
+        <span aria-hidden="true">{open ? '×' : '☰'}</span>
       </button>
     </header>
   )

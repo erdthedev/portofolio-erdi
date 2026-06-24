@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { skills } from '../data/profile.js'
 
 export default function Skills() {
@@ -10,16 +9,9 @@ export default function Skills() {
       </div>
       <div className="skills-grid">
         {skills.map((skill, index) => (
-          <motion.div
-            className="skill-pill"
-            key={skill}
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.035 }}
-            viewport={{ once: true }}
-          >
+          <div className="skill-pill reveal" key={skill}>
             {skill}
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>

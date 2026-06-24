@@ -230,3 +230,28 @@ h1 span {
   .hero-canvas { height: 310px; min-height: 280px; border-radius: 26px; }
   .about-card, .project-card, .timeline-item { padding: 20px; }
 }
+
+.social-icon {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.reveal {
+  animation: revealUp 0.75s ease both;
+}
+.delay-1 { animation-delay: 0.08s; }
+.delay-2 { animation-delay: 0.16s; }
+.delay-3 { animation-delay: 0.24s; }
+.delay-4 { animation-delay: 0.32s; }
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

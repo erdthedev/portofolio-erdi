@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion'
 import { experiences } from '../data/profile.js'
 
 export default function Experience() {
@@ -10,14 +9,7 @@ export default function Experience() {
       </div>
       <div className="timeline">
         {experiences.map((item, index) => (
-          <motion.div
-            className="timeline-item"
-            key={`${item.title}-${item.company}`}
-            initial={{ opacity: 0, x: -18 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ delay: index * 0.08 }}
-            viewport={{ once: true }}
-          >
+          <div className="timeline-item reveal" key={`${item.title}-${item.company}`}>
             <div className="timeline-dot" />
             <div>
               <small>{item.period}</small>
@@ -25,7 +17,7 @@ export default function Experience() {
               <p className="company">{item.company}</p>
               <p>{item.description}</p>
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </section>
