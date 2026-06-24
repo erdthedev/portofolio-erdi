@@ -1,46 +1,28 @@
-# Portfolio 3D Erdinus
+# Portfolio 3D Erdinus - Static Version
 
-Website portofolio 3D ringan menggunakan React, Vite, Three.js, React Three Fiber, Drei, Framer Motion, dan Lucide Icons.
+Versi ini sengaja dibuat tanpa React, Vite, Three.js, npm, dan node_modules.
+Tujuannya supaya deploy di Vercel tidak kena error `npm install`.
 
-## Cara menjalankan lokal
+## Cara deploy ke Vercel
 
-```bash
-npm install
-npm run dev
-```
-
-## Cara build
-
-```bash
-npm run build
-```
-
-## Deploy ke Vercel
-
-1. Upload project ini ke GitHub.
-2. Buka Vercel.
-3. Import repository.
-4. Framework preset: Vite.
-5. Build command: `npm run build`.
-6. Output directory: `dist`.
+1. Extract ZIP.
+2. Upload semua file ke GitHub.
+3. Import repo ke Vercel.
+4. Framework Preset: Other.
+5. Build Command: kosongkan.
+6. Output Directory: kosongkan atau isi `.`.
 7. Deploy.
 
-## Edit data portfolio
+## Edit data
 
-Buka file:
-
-```txt
-src/data/profile.js
-```
-
-Di sana kamu bisa ubah nama, role, email, WhatsApp, skill, project, dan pengalaman.
+Edit langsung di `index.html`:
+- Nama
+- Role
+- Project
+- Email
+- WhatsApp
+- GitHub
 
 ## CV
 
-Taruh file CV kamu di folder `public` dengan nama:
-
-```txt
-cv-erdinus.pdf
-```
-
-Tombol Download CV sudah otomatis mengarah ke file tersebut.
+Kalau mau tombol Download CV berfungsi, taruh file `cv-erdinus.pdf` di folder utama project.

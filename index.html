@@ -3,11 +3,155 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio 3D Erdinus - Accounting, Administration, Coding, and Web Development." />
+    <meta name="description" content="Portfolio Erdinus - Accounting Staff, Informatics Student, and Web Developer." />
     <title>Erdinus | 3D Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <header class="navbar">
+      <a href="#home" class="brand"><span>E</span>Erdinus</a>
+      <nav id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    </header>
+
+    <main>
+      <section id="home" class="hero container">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Yogyakarta, Indonesia</p>
+          <h1>Erdinus <span>Accounting Staff & Informatics Student</span></h1>
+          <p class="lead">Membangun solusi digital yang rapi, ringan, dan berguna untuk pekerjaan nyata. Fokus pada administrasi, accounting support, dan web app sederhana.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">Lihat Project →</a>
+            <a class="btn secondary" href="cv-erdinus.pdf" download>Download CV ↓</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/erdthedev" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:erdinus19@gmail.com">Email</a>
+            <a href="https://wa.me/6281200000000" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="scene reveal delay-1" aria-hidden="true">
+          <div class="cube-wrap">
+            <div class="cube">
+              <div class="face front"><span>WEB</span></div>
+              <div class="face back"><span>DATA</span></div>
+              <div class="face right"><span>UI</span></div>
+              <div class="face left"><span>ADMIN</span></div>
+              <div class="face top"><span>FINANCE</span></div>
+              <div class="face bottom"><span>APP</span></div>
+            </div>
+          </div>
+          <div class="floating-card card-a">React</div>
+          <div class="floating-card card-b">Vercel</div>
+          <div class="floating-card card-c">Supabase</div>
+        </div>
+      </section>
+
+      <section id="about" class="container section grid-two">
+        <div class="section-title reveal">
+          <p class="eyebrow">About</p>
+          <h2>Profil singkat</h2>
+        </div>
+        <div class="glass reveal delay-1">
+          <p>Saya memiliki pengalaman di bidang accounting dan administrasi, sekaligus mengembangkan kemampuan coding untuk membuat website dan sistem kerja yang lebih efisien.</p>
+          <div class="stats">
+            <div><strong>Web App</strong><span>Focus</span></div>
+            <div><strong>Finance + Tech</strong><span>Skill Mix</span></div>
+            <div><strong>Yogyakarta</strong><span>Base</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="container section">
+        <div class="section-title center reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Kombinasi finance, admin, dan teknologi</h2>
+        </div>
+        <div class="skills reveal delay-1">
+          <span>Accounting</span><span>Administration</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Vite</span><span>Supabase</span><span>Vercel</span><span>UI Design</span>
+        </div>
+      </section>
+
+      <section id="projects" class="container section">
+        <div class="section-title center reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Project yang bisa ditunjukkan ke recruiter atau calon klien</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-orb"></div>
+            <p>Finance Web App</p>
+            <h3>UangKu</h3>
+            <span>Aplikasi pencatatan keuangan pribadi dengan dashboard, kategori transaksi, laporan, dan pengelolaan budget.</span>
+            <div class="stack"><small>React</small><small>Supabase</small><small>Vercel</small></div>
+            <a href="https://uangku-vercel.vercel.app/" target="_blank" rel="noreferrer">View project ↗</a>
+          </article>
+          <article class="project-card reveal delay-1">
+            <div class="project-orb"></div>
+            <p>Internal Work System</p>
+            <h3>Sistem Kerumahtanggaan</h3>
+            <span>Konsep sistem untuk membantu pencatatan barang, stok, tugas, dan koordinasi operasional kantor.</span>
+            <div class="stack"><small>Workflow</small><small>Database</small><small>Web App</small></div>
+            <a href="#contact">Discuss project →</a>
+          </article>
+          <article class="project-card reveal delay-2">
+            <div class="project-orb"></div>
+            <p>SaaS Concept</p>
+            <h3>Portfolio Builder</h3>
+            <span>Ide platform pembuat portofolio online agar pengguna bisa membuat link portofolio profesional dengan mudah.</span>
+            <div class="stack"><small>Product</small><small>React</small><small>Supabase</small></div>
+            <a href="#contact">Discuss project →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section grid-two">
+        <div class="section-title reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Pengalaman & aktivitas</h2>
+        </div>
+        <div class="timeline reveal delay-1">
+          <div class="timeline-item">
+            <small>Current</small>
+            <h3>Accounting Staff</h3>
+            <p class="muted">PT Lingkar Organik Indonesia</p>
+            <p>Mengelola pekerjaan administratif dan akuntansi, serta membantu kebutuhan operasional internal agar proses kerja lebih tertata.</p>
+          </div>
+          <div class="timeline-item">
+            <small>Current</small>
+            <h3>Informatics Student</h3>
+            <p class="muted">Campus</p>
+            <p>Mempelajari pemrograman, pengembangan web, database, dan implementasi teknologi untuk menyelesaikan masalah nyata.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="container section contact">
+        <div class="contact-card reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Siap diskusi project atau peluang kerja?</h2>
+          <p>Hubungi saya untuk pekerjaan administrasi, accounting support, website sederhana, atau sistem kerja internal berbasis web.</p>
+          <div class="actions center-actions">
+            <a class="btn primary" href="mailto:erdinus19@gmail.com">Email</a>
+            <a class="btn secondary" href="https://wa.me/6281200000000" target="_blank" rel="noreferrer">WhatsApp</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>© <span id="year"></span> Erdinus. Built as a lightweight 3D portfolio.</footer>
+    <script src="script.js"></script>
   </body>
 </html>
